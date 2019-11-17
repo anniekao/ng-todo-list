@@ -25,6 +25,7 @@ export class TodoListService {
   }
 
   addItem(item: TodoItem) {
+    console.log("======add item======", item)
     this.todoList.push(item);
     this.saveList();
   }
@@ -39,7 +40,7 @@ export class TodoListService {
     this.storageService.setData(todoListStorageKey, this.todoList);
   }
 
-  deleteItem(item: TodoItem) {
+  deleteItem(item) {
     const index = this.todoList.indexOf(item);
     this.todoList.splice(index, 1);
     this.saveList();

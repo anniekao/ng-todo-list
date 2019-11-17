@@ -36,6 +36,6 @@ export class ListManagerComponent implements OnInit {
   }
 
   removeItem(title: string) {
-    this.todoListService.deleteItem({ title })
+    this.todoListService.deleteItem(title)
   }
 }
