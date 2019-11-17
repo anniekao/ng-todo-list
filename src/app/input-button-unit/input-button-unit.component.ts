@@ -17,7 +17,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class InputButtonUnitComponent implements OnInit {
   @Output() submit: EventEmitter<string> = new EventEmitter();
 
-  title = 'Hello World';
+  title = "To-do's right here!";
 
   constructor() {}
 

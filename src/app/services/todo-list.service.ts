@@ -25,7 +25,6 @@ export class TodoListService {
   }
 
   addItem(item: TodoItem) {
-    console.log("======add item======", item)
     this.todoList.push(item);
     this.saveList();
   }
