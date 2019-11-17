@@ -3,14 +3,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-input-button-unit',
   template: `
-    <p>
-      Here goes the {{ title }}
-    </p>
     <input #inputElementRef
            [value]="title" 
-           (keyup.enter)="submitValue(inputElementRef.value)">
+           (keyup.enter)="submitValue(inputElementRef.value)"
+           class="todo-input" >
 
-    <button (click)="submitValue(inputElementRef.value)">
+    <button class="btn" (click)="submitValue(inputElementRef.value)">
       Save
     </button>
   `,
